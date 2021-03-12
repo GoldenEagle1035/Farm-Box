@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Farmer Home page</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+    <link href="css/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body>
+	<div class="wrapper row0">
+		<div id="topnav" class="hoc clear">
+			<div class="fl_left">
+				<ul class="nospace inline pushright">
+					<li><i class="fa fa-home"></i><a id="dashboard">Dashboard</a></li>
+					<li><i class="fa fa-user-plus"></i><a id="create">Add Farm</a></li>
+					<li><i class="fa fa-sign-out"></i> <a href="/farmer/logout">Logout</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<h1>Create a farm</h1>
+		<div class="row">
+			<form method="post" action="/farmer/create/createfarm">
+				<div class="form-group">
+					<label for="name">Farm Name:</label>
+					<input class="form-control" type="text" name="name" placeholder="Enter Farm Name" required>
+				</div>
+				<div class="form-group">
+					<label for="type">Farm Type:</label>
+					<select id="type" name="type">
+					  <option value="other">Other</option>
+					  <option value="cocoa">Cocoa</option>
+					  <option value="cattle">Cattle</option>
+					  <option value="rice">Rice</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="price">Price:</label>
+					<input class="form-control" type="number" name="price" placeholder="Enter Price" required>
+				</div>
+				<div class="form-group">
+					<label for="contractPeriod">Contract Period:</label>
+					<input class="form-control" type="number" name="contractPeriod" placeholder="Contract Period" required>
+				</div>
+				<div class="form-group">
+					<label for="harvestPeriod">Harvest Period:</label>
+					<input class="form-control" type="number" name="harvestPeriod" placeholder="Harvest Period" required>
+				</div>
+				<div class="form-group">
+					<label for="capacity">Capacity:</label>
+					<input class="form-control" type="number" name="capacity" placeholder="Enter Capacity" required>
+				</div>
+
+				<div class="form-group">
+					<label for="noHarvested">Number Harvested:</label>
+					<input class="form-control" type="number" name="noHarvested" placeholder="Number Harvested" required>
+				</div>
+				<div class="form-group">
+					<label for="return">Return:</label>
+					<input class="form-control" type="number" name="return" placeholder="Enter Return" required>
+				</div>
+				<div class="form-group">
+					<label for="return">Owner:</label>
+					<input class="form-control" type="text" name="owner" id="owner" readonly>
+				</div>
+				<button type="submit" class="btn btn-success">Submit</button>
+			</form>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="https://unpkg.com/popper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/create.js"></script>
+</body>
+</html>

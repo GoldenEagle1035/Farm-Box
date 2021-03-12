@@ -1,0 +1,28 @@
+{
+  "name": "farmhouse",
+  "version": "1.0.0",
+  "description": "Agri Tech web application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app"
+  },
+  "dependencies": {
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "connect-flash": "*",
+    "ejs": "*",
+    "express": "*",
+    "express-messages": "*",
+    "express-session": "*",
+    "express-validator": "*",
+    "mongoose": "*",
+    "nodemailer": "*",
+    "nodemon": "*",
+    "passport": "*",
+    "passport-facebook": "*",
+    "passport-local": "*"
+  },
+  "author": "Kazeem Onisarotu",
+  "license": "ISC"
+}

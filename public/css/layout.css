@@ -1,0 +1,148 @@
+/*********************Farm house Css by Marzouq********************************/
+@import url("fontawesome-4.5.0.min.css");
+@import url("framework.css");
+@import url("main.css");
+
+#topnav{font-size:.8rem; text-transform:uppercase;}
+#topnav .fl_left{margin-top:8px;}
+#topnav .inline > li i{margin:0 5px 0 0; line-height:normal;}
+
+#topnav form{display:block; position:relative; width:100%;}
+/* #topnav input, #topnav button{display:block; height:36px; border:none;} */
+/* #topnav input{width:100%; min-width:250px; padding:5px 40px 5px 15px;} */
+#topnav button{position:absolute; top:1px; right:1px; width:32px; height:34px; border-left:1px solid; font-size:16px; cursor:pointer;}
+#topnav button em{display:none;}
+
+#header #logo{margin-top:15px;}
+#header #logo *{margin:0; padding:0; line-height:1;}
+#header #logo h1{font-size:; font-family: sans-serif;}
+
+#pageintro{padding:150px 0;}
+#pageintro article{display:block; max-width:50%;}
+#pageintro article .heading{margin-bottom:30px; font-size:30px; font-family: sans-serif; font-weight: 100;}
+#pageintro article p{margin:0;}
+#pageintro article p:last-of-type{margin-bottom:30px;}
+#pageintro footer a {background-color: #384047; }
+
+.container{padding:80px 0;}
+.sidebar .sdb_holder{margin-bottom:50px;}
+.sidebar .sdb_holder:last-child{margin-bottom:0;}
+
+*, *::before, *::after{transition:all .3s ease-in-out;}
+#mainav form *{transition:none !important;}
+
+nav ul, nav ol{margin:0; padding:0; list-style:none;}
+
+#mainav, #breadcrumb, .sidebar nav{line-height:normal;}
+#mainav .drop::after, #mainav li li .drop::after, #breadcrumb li a::after, .sidebar nav a::after{position:absolute; font-family:"FontAwesome"; font-size:10px; line-height:10px;}
+
+/* Top Navbar */
+#mainav ul{text-transform:uppercase;}
+#mainav ul ul{z-index:9999; position:absolute; width:180px; text-transform:none;}
+#mainav ul ul ul{left:180px; top:0;}
+#mainav li{display:inline-block; position:relative; margin:0 15px 0 0; padding:0;}
+#mainav li:last-child{margin-right:0;}
+#mainav li li{width:100%; margin:0;}
+#mainav li a{display:block; padding:30px 0;}
+#mainav li li a{border:solid; border-width:0 0 1px 0;}
+
+#mainav li li a, #mainav li li .drop{display:block; margin:0; padding:10px 15px;}
+
+
+body{color:#EAEAEA; background-color:#272421;}
+a{color: rgb(56, 64, 71);}
+a:active, a:focus{background:transparent;}
+hr, .borderedbox{border-color:#D7D7D7;}
+label span{color:#FF0000; background-color:inherit;}
+input:focus, textarea:focus, *:required:focus{border-color:rgb(56, 64, 71);}
+
+.overlay{color:#FFFFFF; background-color:inherit;}
+.overlay::after{color:inherit; background-color:rgba(0,0,0,.55);}
+.overlay.coloured::after{color:inherit; background-color:rgba(75,70,65,.8);/* #4B4641 */}
+
+.element{border-color:#D7D7D7;}
+.element figure figcaption .btn {color:#000; background-color:#FFFFFF; border-color:#fff; border-radius: 12px 0 0 0;}
+.element .excerpt .heading a{color:inherit; font-weight: bold;}
+.element:hover .excerpt .heading a{color:green; font-size: 1.5em;}
+
+.btn, .btn.inverse:hover{color:#FFFFFF; background-color:rgb(56, 64, 71); border-color:white;}
+.btn:hover, .btn.inverse{color:inherit; background-color:transparent; border-color:inherit;}
+
+.row0{color:#4A4A4A; background-color:#FFFFFF;}
+.row1{color:#FFFFFF; background-color:#384047;}
+.row2, .row2 a{color:#888888; background-color:#FAFAFA;}
+.row3{color:#4A4A4A; background-color:#FFFFFF;}
+.row4, .row4.overlay{color:#EAEAEA; background-color:#3C3733;}
+.row4.overlay::after{background-color:rgba(60,55,51,.8);}
+.row5, .row5 a{color:#EAEAEA; background-color:#384047;}
+
+
+
+#topnav input, #topnav button{color:#FFFFFF; background-color:#4B4641; border-color:#272421;}
+#topnav input:focus{border-color:rgb(56, 64, 71)B;}
+#topnav button{color:rgb(56, 64, 71);}
+
+#header #logo h1 a{color:inherit; background-color:inherit;}
+
+#mainav li a{color:inherit;}
+#mainav .active a, #mainav a:hover, #mainav li:hover > a{color:inherit; background-color:inherit;}
+#mainav li li a, #mainav .active li a{color:#FFFFFF; background-color:rgba(0,0,0,.6); border-color:rgba(0,0,0,.6);}
+#mainav li li:hover > a, #mainav .active .active > a{color:#FFFFFF; background-color:#384047;}
+#mainav form select{color:#FFFFFF; background-color:#3C3733;}
+
+
+.container .sidebar nav a{color:inherit; border-color:#D7D7D7;}
+.container .sidebar nav a:hover{color:rgb(56, 64, 71);}
+
+.pagination a, .pagination strong{border-color:#D7D7D7;}
+.pagination .current *{color:#FFFFFF; background-color:rgb(56, 64, 71);}
+
+/* #backtotop{color:#FFFFFF; background-color:rgb(56, 64, 71);} */
+
+
+
+/* Media Queries.
+------------ */
+
+
+@media screen and (min-width:980px){
+	.hoc{max-width:980px;}
+}
+
+@media screen and (max-width:980px){
+	.hoc{max-width:90%;}
+}
+
+
+@media screen and (max-width:980px){
+	.imgl, .imgr{display:inline-block; float:none; margin:0 0 10px 0;}
+	.fl_left, .fl_right{display:block; float:none;}
+	.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{display:block; float:none; width:auto; margin:0 0 30px 0; padding:0;}
+
+	#topnav .fl_left ul{margin-bottom:15px; text-align:center;}
+	#topnav .fl_left ul li{display:inline-block; margin-right:20px;}
+	#topnav .fl_left ul li:last-child{margin-right:0;}
+	
+
+	#pageintro article{max-width:none;}
+	#pageintro article .heading{margin-bottom:20px; font-size:16px; font-weight: 600;}
+	#pageintro footer a {font-size: .8em; letter-spacing: 2px; border-radius: 50px; }
+	#pageintro footer  {text-align: center;}
+	.btn{font-size: .8em; letter-spacing: 2px; border-radius: 50px; }
+	.font-x1 { font-size: .8em;}
+	.fl_left { float: none;}
+	.row5 {font-size: .7em; }
+	.container, #footer{padding-bottom:50px;}/* Not neccessary - just looks better */
+}
+
+
+@media screen and (max-width:980px){
+	.scrollable{display:block; width:100%; margin:0 0 30px 0; padding:0 0 15px 0; overflow:auto; overflow-x:scroll;}
+	.scrollable table{margin:0; padding:0; white-space:nowrap;}
+
+	.inline li{display:block; margin-bottom:10px;}
+	.pushright li{margin-right:0;}
+
+	.font-x2{font-size:1.4rem;}
+	.font-x3{font-size:1.6rem;}
+}
